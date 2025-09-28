@@ -2,6 +2,10 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
+import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { FaGithubSquare } from "react-icons/fa";
+import { HiDownload } from "react-icons/hi";
 
 export default function Intro() {
     return (
@@ -40,6 +44,30 @@ export default function Intro() {
                 building <span className="italic">sites & apps</span>. My focus is{" "}
                 <span className="underline">React (Next.js)</span>.
             </motion.p>
+
+            <motion.div
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{delay: 0.1}}
+                className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium">
+                <Link
+                    className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full"
+                    href="#contact">
+                    Contact me here <BsArrowRight />
+                </Link>
+
+                <a className="bg-white px-7 py-3 flex items-center gap-2 rounded-full">
+                    Download CV <HiDownload />
+                </a>
+
+                <a className="bg-white p-4 flex text-gray-700 items-center gap-2 rounded-full">
+                    <BsLinkedin />
+                </a>
+
+                <a className="bg-white p-4 flex text-gray-700 items-center gap-2 rounded-full text-[1.35rem]">
+                    <FaGithubSquare />
+                </a>
+            </motion.div>
         </section>
     )
 }
