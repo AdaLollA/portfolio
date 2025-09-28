@@ -21,14 +21,28 @@ export default function Header() {
                         links.map((link, index) => (
                             <motion.li
                                 key={index}
-                                className="h-3/4 flex items-center justify-center"
+                                className="h-3/4 flex items-center justify-center relative"
                                 initial={{ y: -100, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}>
                                 <Link
                                     href={link.hash}
                                     className={clsx("w-full items-center flex justify-center p-3 hover:text-gray-950 transition",
-                                        { 'text-gray-950': activeSection === link.name })}>
+                                        { 'text-gray-950': activeSection === link.name })}
+                                    onClick={() => setActiveSection(link.name)}>
                                     {link.name}
+
+                                    {
+                                        link.name === activeSection && (
+                                            <motion.span
+                                                layoutId="activeSection"
+                                                transition={{
+                                                    type: 'spring',
+                                                    stiffness: 380,
+                                                    damping: 30
+                                                }}
+                                                className="bg-gray-100 rounded-full absolute inset-0 -z-10"></motion.span>
+                                        )
+                                    }
                                 </Link>
                             </motion.li>
                         ))
