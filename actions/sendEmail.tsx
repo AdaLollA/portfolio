@@ -16,7 +16,7 @@ export async function sendEmail(formData: FormData) {
     const { data } = await resend.emails.send({
       from: 'Acme <onboarding@resend.dev>',
       to: ['portfolio.void989@passmail.com'],
-      subject: 'Portfolio Kontaktformular-Anfrage',
+      subject: 'Portfolio Contact-Request',
       replyTo: senderEmail as string,
       html: message as string
     });
