@@ -27,6 +27,9 @@ export async function sendEmail(formData: FormData) {
     return data;
   } catch (error) {
     console.log(error);
+    if (error instanceof Error) {
+      return { error: error.message }
+    }
   }
-  return { error: 'error while sending email' }
+  return { error: 'unknown error while sending email' }
 }
