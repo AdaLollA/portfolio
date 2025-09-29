@@ -1,5 +1,6 @@
 'use client'
 
+import { useActiveSectionContext } from "@/context/active-section-context";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -10,6 +11,7 @@ import { HiDownload } from "react-icons/hi";
 
 export default function Intro() {
     const { ref } = useSectionInView('Home', 0.5);
+    const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
     return (
         <section
@@ -57,6 +59,10 @@ export default function Intro() {
                 transition={{ delay: 0.1 }}
                 className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium">
                 <Link
+                    onClick={() => {
+                        setActiveSection("Contact");
+                        setTimeOfLastClick(Date.now());
+                    }}
                     href="#contact"
                     className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition">
                     Contact me here <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
