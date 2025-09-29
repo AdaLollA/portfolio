@@ -27,6 +27,6 @@ export async function sendEmail(formData: FormData) {
     return data;
   } catch (error) {
     console.error(error);
-    return { getErrorMessage(error) }
+    return getErrorMessage(error)
   }
 }
