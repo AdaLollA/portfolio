@@ -1,5 +1,6 @@
 'use server'
 
+import { validateString } from '@/lib/utils';
 import { Resend } from 'resend';
 
 export async function sendEmail(formData: FormData) {
@@ -11,24 +12,16 @@ export async function sendEmail(formData: FormData) {
   const senderEmail = formData.get("senderEmail");
   const message = formData.get("message");
 
-  if (!message || typeof message !== "string") {
-    return {
-      error: "invalid message"
-    }
-  }
-
-  if (!senderEmail || typeof senderEmail !== "string") {
-    return {
-      error: "invalid senderEmail"
-    }
-  }
+  // simple server-side validation
+  if (!validateString(senderEmail, 500)) { return { error: 'invalid senderEmail' } }
+  if (!validateString(senderEmail, 5000)) { return { error: 'invalid message' } }
 
   const { data } = await resend.emails.send({
     from: 'Acme <onboarding@resend.dev>',
     to: ['portfolio.void989@passmail.com'],
     subject: 'Portfolio Kontaktformular-Anfrage',
-    replyTo: senderEmail,
-    html: message
+    replyTo: senderEmail as string,
+    html: message as string
   });
 
   console.log(data);

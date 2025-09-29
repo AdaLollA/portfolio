@@ -34,7 +34,7 @@ export default function Contact() {
                 <textarea
                     name="message"
                     required
-                    maxLength={500}
+                    maxLength={5000}
                     className="h-52 my-3 rounded-lg borderBlack px-4 py-4"
                     placeholder="Your message" />
                 <button
