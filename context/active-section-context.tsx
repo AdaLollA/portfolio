@@ -1,9 +1,8 @@
 'use client'
 
-import { links } from '@/lib/data';
+import type { SectionName } from '@/lib/types';
 import React, { createContext, useContext, useState } from 'react'
 
-type SectionName = typeof links[number]['name'];
 type ActiveSectionContextType = {
     activeSection: SectionName,
     setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>,
