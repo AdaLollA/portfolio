@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 export default function Header() {
-    const { activeSection, setActiveSection } = useActiveSectionContext();
+    const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
     return (
         <header className="z-[999] relative">
             <motion.div className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full"
@@ -28,7 +28,10 @@ export default function Header() {
                                     href={link.hash}
                                     className={clsx("w-full items-center flex justify-center p-3 hover:text-gray-950 transition",
                                         { 'text-gray-950': activeSection === link.name })}
-                                    onClick={() => setActiveSection(link.name)}>
+                                    onClick={() => {
+                                        setActiveSection(link.name);
+                                        setTimeOfLastClick(Date.now());
+                                        }}>
                                     {link.name}
 
                                     {
