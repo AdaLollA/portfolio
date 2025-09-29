@@ -1,5 +1,4 @@
 export const validateString = (value: unknown, maxLength: number) => {
-    console.log('value', value);
     if (!value) {
         console.log('is null', value);
         return false;
