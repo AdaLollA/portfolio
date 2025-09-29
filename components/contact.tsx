@@ -19,14 +19,19 @@ export default function Contact() {
             <SectionHeading>Contact me</SectionHeading>
             <p className="text-gray-700 text-center -mt-6">Please contact me through this form.</p>
 
-            <form className="mt-10 flex flex-col">
+            <form className="mt-10 flex flex-col" action={(formData) => {
+                console.log(formData.get("senderEmail"));
+                console.log(formData.get("message"));
+            }}>
                 <input
+                    name="senderEmail"
                     required
                     maxLength={500}
                     type="email"
                     className="h-14 rounded-lg border borderBlack px-4"
                     placeholder="Your email" />
                 <textarea
+                    name="message"
                     required
                     maxLength={500}
                     className="h-52 my-3 rounded-lg borderBlack px-4 py-4"
