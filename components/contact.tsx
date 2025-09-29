@@ -22,7 +22,12 @@ export default function Contact() {
             <p className="text-gray-700 text-center -mt-6">Please contact me through this form.</p>
 
             <form className="mt-10 flex flex-col" action={async (FormData) => {
-                await sendEmail(FormData);
+                const {data, error} = await sendEmail(FormData);
+                if (error) {
+                    alert(error);
+                    return;
+                }
+                alert('Email sent successfully');
             }}>
                 <input
                     name="senderEmail"

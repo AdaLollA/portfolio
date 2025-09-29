@@ -18,7 +18,7 @@ export async function sendEmail(formData: FormData) {
   if (!validateString(recipientEmail, 500)) { return { error: 'invalid recipient email' } }
 
   try {
-    const { data } = await resend.emails.send({
+    const data = await resend.emails.send({
       from: 'Contact Form <onboarding@resend.dev>',
       to: recipientEmail as string,
       subject: 'Portfolio Contact Request',
@@ -28,9 +28,8 @@ export async function sendEmail(formData: FormData) {
       react: React.createElement(ContactFormEmail, { message: message as string, senderEmail: senderEmail as string })
     });
     console.log('resend response', data);
-    return data;
+    return { data };
   } catch (error) {
-    console.error(error);
-    return getErrorMessage(error)
+    return { error: getErrorMessage(error) }
   }
 }
