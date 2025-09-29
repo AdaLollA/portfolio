@@ -1,17 +1,30 @@
 'use client'
 
+import { useActiveSectionContext } from "@/context/active-section-context";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
+import { useInView } from "react-intersection-observer";
 
 export default function Intro() {
+    const { ref, inView } = useInView({ threshold: 0.5 });
+    const { setActiveSection } = useActiveSectionContext();
+
+    useEffect(() => {
+        if (inView) {
+            setActiveSection('Home');
+        }
+    }, [inView, setActiveSection])
+
     return (
-        <section 
-        id="home"
-        className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-100">
+        <section
+            ref={ref}
+            id="home"
+            className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-100">
             <div className="flex items-center justify-center">
                 <div className="relative">
                     <motion.div
@@ -58,22 +71,22 @@ export default function Intro() {
                     Contact me here <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
                 </Link>
 
-                <a 
-                className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
-                href="/cv.pdf"
-                download>
-                    Download CV <HiDownload className="opacity-60 group-hover:translate-y-1 transition"/>
+                <a
+                    className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
+                    href="/cv.pdf"
+                    download>
+                    Download CV <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
                 </a>
 
-                <a 
-                className="bg-white p-4 flex text-gray-700 items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border border-black/10 hover:text-gray-950"
-                href="https://www.linkedin.com/in/lorenz-graf-65201a138/" target="_blank">
+                <a
+                    className="bg-white p-4 flex text-gray-700 items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border border-black/10 hover:text-gray-950"
+                    href="https://www.linkedin.com/in/lorenz-graf-65201a138/" target="_blank">
                     <BsLinkedin />
                 </a>
 
-                <a 
-                className="bg-white p-4 flex text-gray-700 items-center gap-2 rounded-full text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border border-black/10 hover:text-gray-950"
-                href="https://github.com/AdaLollA" target="_blank">
+                <a
+                    className="bg-white p-4 flex text-gray-700 items-center gap-2 rounded-full text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border border-black/10 hover:text-gray-950"
+                    href="https://github.com/AdaLollA" target="_blank">
                     <FaGithubSquare />
                 </a>
             </motion.div>
