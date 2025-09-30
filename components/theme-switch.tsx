@@ -12,9 +12,11 @@ export default function ThemeSwitch() {
         if (theme === 'light') {
             setTheme('dark');
             window.localStorage.setItem('theme', 'dark');
+            document.documentElement.classList.add("dark");
         } else {
             setTheme('light');
             window.localStorage.setItem('theme', 'light');
+            document.documentElement.classList.remove("dark");
         }
     }
 
