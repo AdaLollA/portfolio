@@ -43,7 +43,9 @@ export default function Contact() {
                     maxLength={5000}
                     className="h-52 my-3 rounded-lg borderBlack px-4 py-4 dark:!border-white/40 dark:text-black dark:bg-white/80 dark:focus:bg-white/100 transition-all dark:outline-none"
                     placeholder="Your message" />
-                <SubmitBtn />
+                <div className="w-full flex justify-center">
+                    <SubmitBtn />
+                </div>
             </form>
         </motion.section>
     )
