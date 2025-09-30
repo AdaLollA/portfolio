@@ -5,7 +5,7 @@ import { IoRocketOutline } from "react-icons/io5";
 
 import ggdlImg from "@/public/ggdl.png";
 import avcImg from "@/public/avc.png";
-import anzImg from "@/public/ggdl.png";
+import anzImg from "@/public/anz.png";
 import websitesImg from "@/public/websites.png";
 
 export const links = [
