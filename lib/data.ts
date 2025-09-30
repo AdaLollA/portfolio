@@ -81,7 +81,7 @@ export const experiencesData = [
     description:
       "As Head of Data Science & SEO I not only leverage huge amounts of data to encourage customer innovation, but also synergize this data to hyperscale organic traffic and other KPIs via data driven SEO.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - present",
+    date: "2020 - present",
   }
 ] as const;
 
