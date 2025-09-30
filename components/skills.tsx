@@ -19,6 +19,12 @@ const fadeInAnimationVariants = {
     })
 }
 
+const skillGroupColors = [
+    "bg-fuchsia-50 dark:bg-fuchsia-50/10",
+    "bg-green-50 dark:bg-green-50/10",
+    "bg-sky-50 dark:bg-sky-50/10"
+]
+
 export default function Skills() {
     const { ref } = useSectionInView("Skills", 0.5);
 
@@ -30,19 +36,21 @@ export default function Skills() {
             <SectionHeading>My skills</SectionHeading>
             <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
                 {
-                    skillsData.map((skill, index) => (
-                        <motion.li
-                            variants={fadeInAnimationVariants}
-                            initial="initial"
-                            whileInView="animate"
-                            custom={index}
-                            viewport={{
-                                once: true
-                            }}
-                            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/70"
-                            key={index}>
-                            {skill}
-                        </motion.li>
+                    skillsData.map((skillGroup, groupIndex) => (
+                        skillGroup.map((skill, skillIndex) => (
+                            <motion.li
+                                variants={fadeInAnimationVariants}
+                                initial="initial"
+                                whileInView="animate"
+                                custom={skillIndex}
+                                viewport={{
+                                    once: true
+                                }}
+                                className={`${skillGroupColors[groupIndex % 3]} borderBlack rounded-xl px-5 py-3 dark:text-white/70`}
+                                key={skillIndex}>
+                                {skill}
+                            </motion.li>
+                        ))
                     ))
                 }
             </ul>

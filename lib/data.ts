@@ -110,7 +110,7 @@ export const projectsData = [
     title: "Websites",
     description:
       "Custom websites or progressive web apps such as this one for uses as portfolio, landing pages or blogs via a multitude of tech stacks for front- and backend.",
-    tags: ["React", "Next.js", "Vercel", "Angular", "Firebase", "PWA"],
+    tags: ["React", "Next.js", "Vercel", "Angular", "Firebase", "SSR"],
     imageUrl: websitesImg,
   }
 ] as const;
@@ -161,23 +161,50 @@ export const contributionsData = [
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  [
+    "AI",
+    "LLM",
+    "Git",
+    "Docker"
+  ],
+  ["HTML",
+    "CSS",
+    "React",
+    "Next.js",
+    "PWA",
+    "SSR",
+    "Tailwind",
+    "Node.js",
+  ],
+  [
+    "Firebase",
+    "Pipedream",
+    "Vercel",
+    "Selfhosting",
+    "DNS",
+    "Reverse Proxy",
+    "Auth",
+    "Serverless",
+  ],
+  [
+    "Android",
+    "iOS",
+    "Windows",
+    "MacOS",
+    "Linux"
+  ],
+  [
+    "JavaScript",
+    "TypeScript",
+    "CSS",
+    "SCSS",
+    "GDScript",
+    "C",
+    "C++",
+    "Java",
+    "Kotlin",
+    "Python",
+    "Swift",
+    "Lua"
+  ]
 ] as const;
