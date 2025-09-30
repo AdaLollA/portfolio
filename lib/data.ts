@@ -5,6 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import { IoRocketOutline } from "react-icons/io5";
 
 export const links = [
   {
@@ -35,37 +36,53 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "afsafsd",
-    location: "Miami, FL",
+    title: "Secondary Technical College",
+    location: "Salzburg, AT",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Specialization on Programming and Electronics. Between my studies I got to work at several companies but most notably SBS with which a recurring partnership started to take form.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2010 - 2015",
   },
   {
-    title: "sfafds",
-    location: "Orlando, FL",
+    title: "Fullstack Developer",
+    location: "SBS Software GmbH",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I initially worked as a full-stack native android developer which over time transitioned to Progressive Web App development with Firmware interaction.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2014 - 2018",
   },
   {
-    title: "asfdafds",
-    location: "Houston, TX",
+    title: "B.Sc. at University",
+    location: "Linz, AT",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Specialization on Mobile (Responsive) Development and Business Management. During my studies I was often involved in projects, one of which turned into a company.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2015 - 2018",
   },
   {
-    title: "sfafdas",
-    location: "Houston, TX",
+    title: "Startup Founder",
+    location: "Kennstwen GmbH",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Kennstwen is a B2B2C platform that connects craftsman directly to their customers and vice versa. Amongst other things used by cooperations to support tenants with craftsmat referencing.",
+    icon: React.createElement(IoRocketOutline),
+    date: "2017 - 2019",
   },
+  {
+    title: "M.Sc. at University",
+    location: "Linz, AT",
+    description:
+      "Specialization on Mobile (Responsive) Development and Business Management. Aborted shortly before graduation with a perfect score of 1.0 to persue business projects.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2018 - 2020",
+  },
+  {
+    title: "Head of Data Science & SEO",
+    location: "LightCyde GmbH",
+    description:
+      "As Head of Data Science & SEO I not only leverage huge amounts of data to encourage customer innovation, but also synergize this data to hyperscale organic traffic and other KPIs via data driven SEO.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2019 - present",
+  }
 ] as const;
 
 export const projectsData = [
