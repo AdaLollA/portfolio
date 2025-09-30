@@ -9,7 +9,7 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 
-import faceImg from "@/public/face.jpeg";
+import faceImg from "@/public/face.png";
 
 export default function Intro() {
     const { ref } = useSectionInView('Home', 0.5);
@@ -36,7 +36,7 @@ export default function Intro() {
                             className="h-24 w-24 rounded-full border-[0.35rem] border-white object-cover shadow-xl" />
                     </motion.div>
                     <motion.span
-                        className="text-4xl absolute bottom-0 right-0"
+                        className="text-4xl absolute bottom-0 -left-5"
                         initial={{ opacity: 0, scale: 0 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ type: 'spring', duration: 0.7, stiffness: 125, delay: 0.1 }}>
