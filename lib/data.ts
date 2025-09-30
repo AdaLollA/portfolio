@@ -29,9 +29,13 @@ export const links = [
     hash: "#experience",
   },
   {
+    name: "Contributions",
+    hash: "#contributions",
+  },
+  {
     name: "Contact",
     hash: "#contact",
-  },
+  }
 ] as const;
 
 export const experiencesData = [
@@ -108,11 +112,49 @@ export const projectsData = [
     imageUrl: wordanalyticsImg,
   },
   {
-    title: "Homepages",
+    title: "Websites",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
+  }
+] as const;
+
+export const contributionsData = [
+  {
+    title: "xlsx with styles",
+    description:
+      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    url: 'https://github.com/sleitor/xlsx-with-styles/'
+  },
+  {
+    title: "angular qr scanner",
+    description:
+      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+    url: 'https://github.com/goergch/angular2-qrscanner/'
+  },
+  {
+    title: "ionic parallax",
+    description:
+      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    url: 'https://github.com/RaschidJFR/ionic-header-parallax/'
+  },
+  {
+    title: "capacitor video recorder",
+    description:
+      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    url: 'https://github.com/TeamMaestro/capacitor-video-recorder/'
+  },
+  {
+    title: "iot empower ",
+    description:
+      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    url: 'https://github.com/iotempire/iotempower/'
   }
 ] as const;
 
