@@ -40,9 +40,9 @@ export default function RootLayout({
             {children}
             <Toaster position="top-right" />
             <Footer />
+            <ThemeSwitch />
           </ThemeContextProvider>
         </ActiveSectionContextProvider>
-        <ThemeSwitch />
       </body>
     </html >
   );
