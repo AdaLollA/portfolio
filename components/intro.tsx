@@ -20,7 +20,7 @@ export default function Intro() {
             ref={ref}
             id="home"
             className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-100">
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center mt-10 mb-20">
                 <div className="relative">
                     <motion.div
                         initial={{ opacity: 0, scale: 0 }}
@@ -33,7 +33,7 @@ export default function Intro() {
                             height='192'
                             quality='95'
                             priority={true}
-                            className="h-24 w-24 rounded-full border-[0.35rem] border-white/60 object-cover shadow-xl" />
+                            className="h-28 w-28 rounded-full border-[0.35rem] border-white/60 object-cover shadow-xl" />
                     </motion.div>
                     <motion.span
                         className="text-4xl absolute bottom-0 -left-5"
@@ -58,7 +58,7 @@ export default function Intro() {
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 }}
-                className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium">
+                className="flex flex-col sm:flex-row mt-[4rem] items-center justify-center gap-2 px-4 text-lg font-medium">
                 <Link
                     onClick={() => {
                         setActiveSection("Contact");
