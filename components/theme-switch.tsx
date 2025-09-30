@@ -22,10 +22,12 @@ export default function ThemeSwitch() {
 
     useEffect(() => {
         const localTheme = window.localStorage.getItem('theme') as Theme | null;
-        if (localTheme) {
+        if (localTheme === 'dark') {
             setTheme(localTheme);
+            document.documentElement.classList.add("dark");
         } else if (window.matchMedia('(prefers-color-scheme: dark').matches) {
             setTheme('dark');
+            document.documentElement.classList.add("dark");
         }
     }, []); // empty dependency array -> only run once
 
