@@ -10,7 +10,7 @@ import { useTheme } from '@/context/theme-context';
 
 export default function Experience() {
     const { theme } = useTheme();
-    const { ref } = useSectionInView("Experience");
+    const { ref } = useSectionInView("Experience", 0.2);
     return (
         <section
             ref={ref}
