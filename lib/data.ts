@@ -43,48 +43,42 @@ export const experiencesData = [
   {
     title: "Secondary Technical College",
     location: "Salzburg, AT",
-    description:
-      "Specialization on Programming and Electronics. Between my studies I got to work at several companies but most notably SBS with which a recurring partnership started to take form.",
+    description: "Specialization on Programming and Electronics. Between my studies I got to work at several companies but most notably SBS with which a recurring partnership started to take form.",
     icon: React.createElement(LuGraduationCap),
     date: "2010 - 2015",
   },
   {
     title: "Fullstack Developer",
     location: "SBS Software GmbH",
-    description:
-      "I worked with SBS on multiple native Android, aswell as Progressive Web App projects over the years including full-time and contract engagements.",
+    description: "I worked with SBS on multiple native Android, aswell as Progressive Web App projects over the years including full-time and contract engagements.",
     icon: React.createElement(CgWorkAlt),
     date: "2014 - 2018",
   },
   {
     title: "B.Sc. at University",
     location: "Linz, AT",
-    description:
-      "Specialization on Mobile (Responsive) Development and Business Management. During my studies I was often involved in projects, one of which turned into a company.",
+    description: "Specialization on Mobile (Responsive) Development and Business Management. During my studies I was often involved in projects, one of which turned into a company.",
     icon: React.createElement(LuGraduationCap),
     date: "2015 - 2018",
   },
   {
     title: "Startup Founder",
     location: "Kennstwen GmbH",
-    description:
-      "Kennstwen is a B2B2C platform that connects craftsman directly to their customers and vice versa. Amongst other things used by cooperations to support tenants with craftsmat referencing.",
+    description: "Kennstwen is a B2B2C platform that connects craftsman directly to their customers and vice versa. Amongst other things used by cooperations to support tenants with craftsmat referencing.",
     icon: React.createElement(IoRocketOutline),
     date: "2017 - 2019",
   },
   {
     title: "M.Sc. at University",
     location: "Linz, AT",
-    description:
-      "Specialization on Mobile (Responsive) Development and Business Management. Aborted shortly before graduation with a perfect score of 1.0 to persue business projects.",
+    description: "Specialization on Mobile (Responsive) Development and Business Management. Aborted shortly before graduation with a perfect score of 1.0 to persue business projects.",
     icon: React.createElement(LuGraduationCap),
     date: "2018 - 2020",
   },
   {
     title: "Head of Data Science & SEO",
     location: "LightCyde GmbH",
-    description:
-      "As Head of Data Science & SEO I not only leverage huge amounts of data to encourage customer innovation, but also synergize this data to hyperscale organic traffic and other KPIs via data driven SEO.",
+    description: "As Head of Data Science & SEO I not only leverage huge amounts of data to encourage customer innovation, but also synergize this data to hyperscale organic traffic and other KPIs via data driven SEO.",
     icon: React.createElement(CgWorkAlt),
     date: "2020 - present",
   }
@@ -94,28 +88,28 @@ export const projectsData = [
   {
     title: "GGDL Accounting",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+      "Automated accounting solution specifically targeted towards, but not limited to property owners. Learns recurring entries, tax rates and preferred structures.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
     imageUrl: ggdlImg,
   },
   {
     title: "AVC Social",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "Cross-Platform social media application focused on group-based interactions like shared custom data tracking, event system and birthday reminders.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
     imageUrl: avcImg,
   },
   {
     title: "Anz Live Wallpaper",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "Live Android lockscreen where you can keep you own pet ant colony. Feed them and watch them forage, dig chambers, fend off intruders and grow in numbers.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: anzImg,
   },
   {
     title: "Websites",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "Custom websites or progressive web apps such as this one for uses as portfolio, landing pages or blogs via a multitude of tech stacks for front- and backend.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: websitesImg,
   }
