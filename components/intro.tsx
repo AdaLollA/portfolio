@@ -51,7 +51,7 @@ export default function Intro() {
                 <span className="font-bold">Hello, I'm Lorenz.</span> I'm a{" "}
                 <span className="italic">full-stack developer</span> with{" "}
                 <span className="font-bold">{new Date().getFullYear() - 2014} years</span> of experience. My focus current is{" "}
-                <span className="underline">data science & seo</span>.
+                <span className="underline">data science & seo.</span>
             </motion.h1>
 
             <motion.div
