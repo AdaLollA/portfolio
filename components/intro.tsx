@@ -20,7 +20,7 @@ export default function Intro() {
             ref={ref}
             id="home"
             className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-100">
-            <div className="flex items-center justify-center mt-10 mb-20">
+            <div className="flex items-center justify-center">
                 <div className="relative">
                     <motion.div
                         initial={{ opacity: 0, scale: 0 }}
@@ -58,7 +58,7 @@ export default function Intro() {
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 }}
-                className="flex flex-col sm:flex-row mt-[4rem] items-center justify-center gap-2 px-4 text-lg font-medium">
+                className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium">
                 <Link
                     onClick={() => {
                         setActiveSection("Contact");
