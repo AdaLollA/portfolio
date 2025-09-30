@@ -22,9 +22,11 @@ export default function ThemeSwitch() {
 
     useEffect(() => {
         const localTheme = window.localStorage.getItem('theme') as Theme | null;
-        if (localTheme === 'dark') {
+        if (localTheme) {
             setTheme(localTheme);
-            document.documentElement.classList.add("dark");
+            if (localTheme === 'dark') {
+                document.documentElement.classList.add("dark");
+            }
         } else if (window.matchMedia('(prefers-color-scheme: dark').matches) {
             setTheme('dark');
             document.documentElement.classList.add("dark");
