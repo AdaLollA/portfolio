@@ -9,6 +9,8 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 
+import faceImg from "@/public/face.jpeg";
+
 export default function Intro() {
     const { ref } = useSectionInView('Home', 0.5);
     const { setActiveSection, setTimeOfLastClick } = useActiveSection();
@@ -25,8 +27,8 @@ export default function Intro() {
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ type: 'tween', duration: 0.2 }}>
                         <Image
-                            src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=368&h=368&q=100'
-                            alt="Lorenz Portrait"
+                            src={ faceImg }
+                            alt="Lorenz' Face"
                             width='192'
                             height='192'
                             quality='95'
