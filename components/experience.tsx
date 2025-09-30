@@ -29,17 +29,17 @@ export default function Experience() {
                                 padding: "1.3rem 2rem"
                             }}
                                 contentArrowStyle={{
-                                    borderRight: "0.4rem solid #9ca3af"
+                                    borderRight: theme === 'light' ? "0.4rem solid #9ca3af" : "0.4rem solid rgba(255, 255, 255, 0.3)"
                                 }}
                                 date={item.date}
                                 icon={item.icon}
                                 iconStyle={{
-                                    background: "white",
+                                    background: theme === 'light' ? "white" : "grey",
                                     fontSize: "1.5rem"
                                 }}>
                                 <h3 className='semi-bold capitalize'>{item.title}</h3>
                                 <p className='font-normal !mt-0'>{item.location}</p>
-                                <p className='!mt-1 !font-normal text-gray-700'>{item.description}</p>
+                                <p className='!mt-1 !font-normal text-gray-700 dark:text-white/70'>{item.description}</p>
                             </VerticalTimelineElement>
                         </React.Fragment>
                     ))
