@@ -50,7 +50,7 @@ export const experiencesData = [
     title: "Fullstack Developer",
     location: "SBS Software GmbH",
     description:
-      "I initially worked as a full-stack native android developer which over time transitioned to Progressive Web App development with Firmware interaction.",
+      "I worked with SBS on multiple native Android, aswell as Progressive Web App projects over the years including full-time and contract engagements.",
     icon: React.createElement(CgWorkAlt),
     date: "2014 - 2018",
   },
