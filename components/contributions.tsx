@@ -15,7 +15,7 @@ export default function Contributions() {
             id='contributions'
             className='scroll-mt-28 mb-28'>
             <SectionHeading>Contributions</SectionHeading>
-            <div>
+            <div className="grid grid-cols-2 gap-4">
                 {
                     contributionsData.map((project, index) => (
                         <React.Fragment key={index}>

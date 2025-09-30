@@ -124,44 +124,44 @@ export const contributionsData = [
   {
     title: "xlsx with styles",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["code contribution"],
-    url: 'https://github.com/sleitor/xlsx-with-styles/'
+      "Custom cell styles and embedding images in Excel sheets via JavaScript.",
+    type: "code",
+    url: 'https://github.com/sleitor/xlsx-with-styles/pull/3'
   },
   {
     title: "angular qr scanner",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["code contribution"],
-    url: 'https://github.com/goergch/angular2-qrscanner/'
+      "QR code scanning directly from a webcam and rendering the captured image onto a 2D canvas for processing.",
+    type: "code",
+    url: 'https://github.com/goergch/angular2-qrscanner/pull/44'
   },
   {
-    title: "ionic parallax",
+    title: "ionic header parallax",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["code contribution"],
-    url: 'https://github.com/RaschidJFR/ionic-header-parallax/'
+      "A smooth parallax effect for headers, transforming a cover photo into a toolbar as users scroll.",
+    type: "code",
+    url: 'https://github.com/RaschidJFR/ionic-header-parallax/pull/29'
   },
   {
     title: "capacitor video recorder",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["code contribution"],
-    url: 'https://github.com/TeamMaestro/capacitor-video-recorder/'
+      "Native video recording with camera and microphone access (native iOS and Android).",
+    type: "code",
+    url: 'https://github.com/TeamMaestro/capacitor-video-recorder/pull/30'
   },
   {
     title: "LM Studio",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["issue contribution"],
-    url: 'https://github.com/lmstudio-ai/lmstudio-bug-tracker/'
+      "Reporting and tracking issues related to the LM Studio desktop application",
+    type: "issue",
+    url: 'https://github.com/lmstudio-ai/lmstudio-bug-tracker/issues/846'
   },
   {
     title: "codename goose",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["issue contribution"],
-    url: 'https://github.com/block/goose/'
+      "An open-source AI agent that automates coding, debugging, and deployment using any LLM.",
+    type: "issue",
+    url: 'https://github.com/block/goose/issues/4397'
   }
 ] as const;
 

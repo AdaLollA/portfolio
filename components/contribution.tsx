@@ -1,14 +1,14 @@
 'use client'
 
 import { useScroll, useTransform } from "framer-motion";
-import Image from "next/image";
 import { useRef } from "react";
 import { motion } from "framer-motion";
 import { contributionsData } from "@/lib/data";
+import { FaGithubSquare } from "react-icons/fa";
 
 type ProjectProps = typeof contributionsData[number];
 
-export default function Contribution({ title, description, tags, imageUrl }: ProjectProps) {
+export default function Contribution({ title, description, type, url }: ProjectProps) {
     const ref = useRef<HTMLElement>(null);
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -25,7 +25,25 @@ export default function Contribution({ title, description, tags, imageUrl }: Pro
         }}>
         <section
             ref={ref}
-            className='bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition rounded-lg shadow-2xl
+            className='bg-gray-100 max-w-[20rem] border border-black/5 overflow-hidden relative h-[15rem] hover:bg-gray-200 transition rounded-lg shadow-2xl
+            dark:bg-white/10 dark:hover:bg-white/20'>
+            <div className='pt-4 pb-8 px-5 flex flex-col h-full items-center justify-between'>
+                <h3 className='text-2xl font-semibold text-center'>{title}</h3>
+                <p className='mt-2 leading-relaxed text-gray-700 dark:text-white/70 text-center'>{description}</p>
+                <a
+                    className="bg-white p-4 flex h-6 text-gray-700 items-center gap-2 rounded-full focus:scale-[1.10] hover:scale-[1.10] active:scale-105 transition cursor-pointer borderBlack hover:text-gray-950 dark:bg-white/10 dark:text-white/60 dark:hover:text-gray-200"
+                    href={url} target="_blank">
+                    <strong>{type}</strong> contribtution via Github
+                </a>
+            </div>
+        </section>
+    </motion.div>
+}
+
+/*
+        <section
+            ref={ref}
+            className='bg-gray-100 max-w-[20rem] border border-black/5 overflow-hidden relative h-[15rem] hover:bg-gray-200 transition rounded-lg shadow-2xl
             dark:bg-white/10 dark:hover:bg-white/20'>
             <div className='pt-4 pb-8 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full'>
                 <h3 className='text-2xl font-semibold'>{title}</h3>
@@ -39,5 +57,4 @@ export default function Contribution({ title, description, tags, imageUrl }: Pro
                 </ul>
             </div>
         </section>
-    </motion.div>
-}
+*/
