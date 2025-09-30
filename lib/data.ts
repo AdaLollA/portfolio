@@ -125,36 +125,43 @@ export const contributionsData = [
     title: "xlsx with styles",
     description:
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    tags: ["code contribution"],
     url: 'https://github.com/sleitor/xlsx-with-styles/'
   },
   {
     title: "angular qr scanner",
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+    tags: ["code contribution"],
     url: 'https://github.com/goergch/angular2-qrscanner/'
   },
   {
     title: "ionic parallax",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    tags: ["code contribution"],
     url: 'https://github.com/RaschidJFR/ionic-header-parallax/'
   },
   {
     title: "capacitor video recorder",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    tags: ["code contribution"],
     url: 'https://github.com/TeamMaestro/capacitor-video-recorder/'
   },
   {
-    title: "iot empower ",
+    title: "LM Studio",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    url: 'https://github.com/iotempire/iotempower/'
+    tags: ["issue contribution"],
+    url: 'https://github.com/lmstudio-ai/lmstudio-bug-tracker/'
+  },
+  {
+    title: "codename goose",
+    description:
+      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+    tags: ["issue contribution"],
+    url: 'https://github.com/block/goose/'
   }
 ] as const;
 
