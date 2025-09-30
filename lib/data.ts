@@ -122,20 +122,6 @@ export const projectsData = [
 
 export const contributionsData = [
   {
-    title: "xlsx with styles",
-    description:
-      "Custom cell styles and embedding images in Excel sheets via JavaScript.",
-    type: "code",
-    url: 'https://github.com/sleitor/xlsx-with-styles/pull/3'
-  },
-  {
-    title: "angular qr scanner",
-    description:
-      "QR code scanning directly from a webcam and rendering the captured image onto a 2D canvas for processing.",
-    type: "code",
-    url: 'https://github.com/goergch/angular2-qrscanner/pull/44'
-  },
-  {
     title: "ionic header parallax",
     description:
       "A smooth parallax effect for headers, transforming a cover photo into a toolbar as users scroll.",
@@ -148,6 +134,20 @@ export const contributionsData = [
       "Native video recording with camera and microphone access (native iOS and Android).",
     type: "code",
     url: 'https://github.com/TeamMaestro/capacitor-video-recorder/pull/30'
+  },
+  {
+    title: "xlsx with styles",
+    description:
+      "Custom cell styles and embedding images in Excel sheets via JavaScript.",
+    type: "code",
+    url: 'https://github.com/sleitor/xlsx-with-styles/pull/3'
+  },
+  {
+    title: "angular qr scanner",
+    description:
+      "QR code scanning directly from a webcam and rendering the captured image onto a 2D canvas for processing.",
+    type: "code",
+    url: 'https://github.com/goergch/angular2-qrscanner/pull/44'
   },
   {
     title: "LM Studio",

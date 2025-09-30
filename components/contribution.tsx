@@ -25,13 +25,13 @@ export default function Contribution({ title, description, type, url }: ProjectP
         }}>
         <section
             ref={ref}
-            className='bg-gray-100 max-w-[20rem] border border-black/5 overflow-hidden relative h-[15rem] hover:bg-gray-200 transition rounded-lg shadow-2xl
+            className='bg-gray-100 sm:max-w-[20rem] border border-black/5 overflow-hidden relative sm:h-[15rem] hover:bg-gray-200 transition rounded-lg shadow-2xl
             dark:bg-white/10 dark:hover:bg-white/20'>
-            <div className='pt-4 pb-8 px-5 flex flex-col h-full items-center justify-between'>
+            <div className='pt-4 pb-4 px-5 flex flex-col h-full items-center justify-between'>
                 <h3 className='text-2xl font-semibold text-center'>{title}</h3>
-                <p className='mt-2 leading-relaxed text-gray-700 dark:text-white/70 text-center'>{description}</p>
+                <p className='mt-2 mb-2 leading-relaxed text-gray-700 dark:text-white/70 text-center'>{description}</p>
                 <a
-                    className="bg-white p-4 flex h-6 text-gray-700 items-center gap-2 rounded-full focus:scale-[1.10] hover:scale-[1.10] active:scale-105 transition cursor-pointer borderBlack hover:text-gray-950 dark:bg-white/10 dark:text-white/60 dark:hover:text-gray-200"
+                    className="mt-2 mb-2 bg-white p-4 flex h-6 text-gray-700 items-center gap-2 rounded-full focus:scale-[1.10] hover:scale-[1.10] active:scale-105 transition cursor-pointer borderBlack hover:text-gray-950 dark:bg-white/10 dark:text-white/60 dark:hover:text-gray-200"
                     href={url} target="_blank">
                     <strong>{type}</strong> contribtution via Github
                 </a>
@@ -39,22 +39,3 @@ export default function Contribution({ title, description, type, url }: ProjectP
         </section>
     </motion.div>
 }
-
-/*
-        <section
-            ref={ref}
-            className='bg-gray-100 max-w-[20rem] border border-black/5 overflow-hidden relative h-[15rem] hover:bg-gray-200 transition rounded-lg shadow-2xl
-            dark:bg-white/10 dark:hover:bg-white/20'>
-            <div className='pt-4 pb-8 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full'>
-                <h3 className='text-2xl font-semibold'>{title}</h3>
-                <p className='mt-2 leading-relaxed text-gray-700 dark:text-white/70'>{description}</p>
-                <ul className='flex flex-wrap mt-4 gap-2 sm:mt-auto'>
-                    {tags.map((tag, index) => (
-                        <li
-                            key={index}
-                            className='bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70'>{tag}</li>
-                    ))}
-                </ul>
-            </div>
-        </section>
-*/
