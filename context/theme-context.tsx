@@ -41,7 +41,7 @@ export default function ThemeContextProvider({ children }: { children: React.Rea
     return <ThemeContext.Provider value={{ theme, toggleTheme }}> {children} </ThemeContext.Provider>
 }
 
-export function useThemeContext() {
+export function useTheme() {
     const context = useContext(ThemeContext);
     if (context === null) {
         throw new Error(

@@ -1,6 +1,6 @@
 'use client'
 
-import { useActiveSectionContext } from "@/context/active-section-context";
+import { useActiveSection } from "@/context/active-section-context";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -11,7 +11,7 @@ import { HiDownload } from "react-icons/hi";
 
 export default function Intro() {
     const { ref } = useSectionInView('Home', 0.5);
-    const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+    const { setActiveSection, setTimeOfLastClick } = useActiveSection();
 
     return (
         <section

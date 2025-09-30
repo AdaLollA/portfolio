@@ -6,10 +6,10 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import { experiencesData } from '@/lib/data';
 import { useSectionInView } from '@/lib/hooks';
-import { useThemeContext } from '@/context/theme-context';
+import { useTheme } from '@/context/theme-context';
 
 export default function Experience() {
-    const { theme } = useThemeContext();
+    const { theme } = useTheme();
     const { ref } = useSectionInView("Experience");
     return (
         <section
