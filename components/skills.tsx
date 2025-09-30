@@ -20,9 +20,9 @@ const fadeInAnimationVariants = {
 }
 
 const skillGroupColors = [
-    "bg-fuchsia-50 dark:bg-fuchsia-50/10",
-    "bg-green-50 dark:bg-green-50/10",
-    "bg-sky-50 dark:bg-sky-50/10"
+    "bg-fuchsia-50 dark:bg-fuchsia-400/10",
+    "bg-green-50 dark:bg-green-400/10",
+    "bg-sky-50 dark:bg-sky-400/10"
 ]
 
 export default function Skills() {
