@@ -89,28 +89,28 @@ export const projectsData = [
     title: "GGDL Accounting",
     description:
       "Automated accounting solution specifically targeted towards, but not limited to property owners. Learns recurring entries, tax rates and preferred structures.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    tags: ["AI", "Angular", "Firebase", "PWA", "Auth", "DB", "XLSX"],
     imageUrl: ggdlImg,
   },
   {
     title: "AVC Social",
     description:
       "Cross-Platform social media application focused on group-based interactions like shared custom data tracking, event system and birthday reminders.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+    tags: ["Angular", "Firebase", "FaaS", "PWA", "Push", "Auth"],
     imageUrl: avcImg,
   },
   {
     title: "Anz Live Wallpaper",
     description:
       "Live Android lockscreen where you can keep you own pet ant colony. Feed them and watch them forage, dig chambers, fend off intruders and grow in numbers.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    tags: ["Android", "Godot", "WASM", "Physics", "Shader", "3D"],
     imageUrl: anzImg,
   },
   {
     title: "Websites",
     description:
       "Custom websites or progressive web apps such as this one for uses as portfolio, landing pages or blogs via a multitude of tech stacks for front- and backend.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    tags: ["React", "Next.js", "Vercel", "Angular", "Firebase", "PWA"],
     imageUrl: websitesImg,
   }
 ] as const;
