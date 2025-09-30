@@ -50,7 +50,7 @@ export default function Intro() {
                 className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl">
                 <span className="font-bold">Hello, I'm Lorenz.</span> I'm a{" "}
                 <span className="italic">full-stack developer</span> with{" "}
-                <span className="font-bold">{new Date().getFullYear() - 2014} years</span> of experience. My focus is{" "}
+                <span className="font-bold">{new Date().getFullYear() - 2014} years</span> of experience. My focus current is{" "}
                 <span className="underline">data science & seo</span>.
             </motion.h1>
 
