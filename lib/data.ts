@@ -184,6 +184,7 @@ export const skillsData = [
     "DNS",
     "Reverse Proxy",
     "Auth",
+    "Push Notification",
     "Serverless",
   ],
   [
