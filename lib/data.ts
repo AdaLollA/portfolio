@@ -93,18 +93,18 @@ export const projectsData = [
     imageUrl: ggdlImg,
   },
   {
-    title: "AVC Social",
-    description:
-      "Cross-Platform social media application focused on group-based interactions like shared custom data tracking, event system and birthday reminders.",
-    tags: ["Angular", "Firebase", "FaaS", "PWA", "Push", "Auth"],
-    imageUrl: avcImg,
-  },
-  {
     title: "Anz Live Wallpaper",
     description:
       "Live Android lockscreen where you can keep you own pet ant colony. Feed them and watch them forage, dig chambers, fend off intruders and grow in numbers.",
     tags: ["Android", "Godot", "WASM", "Physics", "Shader", "3D"],
     imageUrl: anzImg,
+  },
+  {
+    title: "AVC Social",
+    description:
+      "Cross-Platform social media application focused on group-based interactions like shared custom data tracking, event system and birthday reminders.",
+    tags: ["Angular", "Firebase", "FaaS", "PWA", "Push", "Auth"],
+    imageUrl: avcImg,
   },
   {
     title: "Websites",
