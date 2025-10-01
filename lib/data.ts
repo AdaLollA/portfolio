@@ -64,7 +64,7 @@ export const experiencesData = [
   {
     title: "Startup Founder",
     location: "Kennstwen GmbH",
-    description: "Kennstwen is a B2B2C platform that connects craftsman directly to their customers and vice versa. Amongst other things used by cooperations to support tenants with craftsmat referencing.",
+    description: "Kennstwen is a B2B2C platform that connects craftsman directly to their customers and via cooperative directive. After three years I executed a full exit divesting my ownership stake.",
     icon: React.createElement(IoRocketOutline),
     date: "2017 - 2019",
   },
