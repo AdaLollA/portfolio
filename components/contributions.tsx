@@ -24,11 +24,11 @@ export default function Contributions() {
                     ))
                 }
             </div>
-            <div className='flex w-full justify-around mt-28'>
+            <div className='flex w-full justify-around flex-wrap mt-16'>
                 {
                     accoladesData.map((accoladeGroup, i) => (
                         <div key={i}>
-                            <h3 className='text-2xl mb-3'>{accoladeGroup.title}</h3>
+                            <h3 className='text-2xl mb-3 mt-8'>{accoladeGroup.title}</h3>
                             <div>
                                 {
                                     accoladeGroup.accolades.map((accolade, j) => (
