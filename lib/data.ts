@@ -180,7 +180,7 @@ export const accoladesData = [
     title: "Certs",
     accolades: [
       {
-        prefix: "Coding Contest",
+        prefix: "Coding Contest (nationals)",
         title: "2nd Place",
         url: "https://register.codingcontest.org/"
       },
