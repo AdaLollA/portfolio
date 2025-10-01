@@ -171,13 +171,8 @@ export const accoladesData = [
       },
       {
         prefix: "thesis paper",
-        title: "bla bla",
-        url: "https://sitechecker.pro/case-studies/lightcyde-agency/"
-      },
-      {
-        prefix: "thesis paper",
-        title: "bla bla bla",
-        url: "https://sitechecker.pro/case-studies/lightcyde-agency/"
+        title: "Intelligent Sleep Systems",
+        url: "/soisl.pdf"
       }
     ]
   },
@@ -185,19 +180,19 @@ export const accoladesData = [
     title: "Certs",
     accolades: [
       {
-        prefix: "white paper",
-        title: "Sitechecker SEO",
-        url: "https://sitechecker.pro/case-studies/lightcyde-agency/"
+        prefix: "Coding Contest",
+        title: "2nd Place",
+        url: "https://register.codingcontest.org/"
       },
       {
-        prefix: "thesis",
-        title: "bla bla",
-        url: "https://sitechecker.pro/case-studies/lightcyde-agency/"
+        prefix: "Google Academy",
+        title: "Google Analytics",
+        url: "https://support.google.com/analytics/answer/15440208?sjid=10055628440652775658-EU"
       },
       {
-        prefix: "tesis",
-        title: "bla bla bla",
-        url: "https://sitechecker.pro/case-studies/lightcyde-agency/"
+        prefix: "Austrian Governemnt",
+        title: "R&D Talent",
+        url: "https://www.bmimi.gv.at/"
       }
     ]
   }
