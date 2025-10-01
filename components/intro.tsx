@@ -9,7 +9,7 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 
-import faceImg from "@/public/face.png";
+import faceImg from "@/public/face_close.png";
 
 export default function Intro() {
     const { ref } = useSectionInView('Home', 0.5);
