@@ -165,17 +165,17 @@ export const accoladesData = [
     title: "Papers",
     accolades: [
       {
-        prefix: "white paper",
-        title: "Case Study w/ Sitechecker",
+        prefix: "case study",
+        title: "Scatter Analysis SEO",
         url: "https://sitechecker.pro/case-studies/lightcyde-agency/"
       },
       {
-        prefix: "thesis paper",
+        prefix: "thesis",
         title: "AI on Microcontrollers",
         url: "/ba1.pdf"
       },
       {
-        prefix: "thesis paper",
+        prefix: "thesis",
         title: "Intelligent Sleep Systems",
         url: "/ba2.pdf"
       }
