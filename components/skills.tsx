@@ -46,7 +46,7 @@ export default function Skills() {
                                 viewport={{
                                     once: true
                                 }}
-                                className={`${skillGroupColors[groupIndex % 3]} borderBlack rounded-xl px-5 py-3 dark:text-white/70`}
+                                className={`${skillGroupColors[groupIndex % 3]} borderBlack rounded-xl px-5 py-1 sm:py-2 dark:text-white/70`}
                                 key={skillIndex}>
                                 {skill}
                             </motion.li>
