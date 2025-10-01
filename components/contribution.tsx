@@ -33,7 +33,7 @@ export default function Contribution({ title, description, type, url }: ProjectP
                 <a
                     className="mt-2 mb-2 bg-white p-4 flex h-6 text-gray-700 items-center gap-2 rounded-full focus:scale-[1.10] hover:scale-[1.10] active:scale-105 transition cursor-pointer borderBlack hover:text-gray-950 dark:bg-white/10 dark:text-white/60 dark:hover:text-gray-200"
                     href={url} target="_blank">
-                    <FaGithub/> GitHub <strong>{type}</strong> contribtution
+                    <FaGithub/> GitHub <strong>{type}</strong> contribution
                 </a>
             </div>
         </section>
