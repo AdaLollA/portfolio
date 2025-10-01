@@ -160,6 +160,49 @@ export const contributionsData = [
   }
 ] as const;
 
+export const accoladesData = [
+  {
+    title: "Papers",
+    accolades: [
+      {
+        prefix: "white paper",
+        title: "Sitechecker SEO",
+        url: "https://sitechecker.pro/case-studies/lightcyde-agency/"
+      },
+      {
+        prefix: "thesis paper",
+        title: "bla bla",
+        url: "https://sitechecker.pro/case-studies/lightcyde-agency/"
+      },
+      {
+        prefix: "thesis paper",
+        title: "bla bla bla",
+        url: "https://sitechecker.pro/case-studies/lightcyde-agency/"
+      }
+    ]
+  },
+  {
+    title: "Certs",
+    accolades: [
+      {
+        prefix: "white paper",
+        title: "Sitechecker SEO",
+        url: "https://sitechecker.pro/case-studies/lightcyde-agency/"
+      },
+      {
+        prefix: "thesis",
+        title: "bla bla",
+        url: "https://sitechecker.pro/case-studies/lightcyde-agency/"
+      },
+      {
+        prefix: "tesis",
+        title: "bla bla bla",
+        url: "https://sitechecker.pro/case-studies/lightcyde-agency/"
+      }
+    ]
+  }
+] as const;
+
 export const skillsData = [
   [
     "AI",

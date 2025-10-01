@@ -2,7 +2,7 @@
 
 import React from 'react'
 import SectionHeading from './section-heading'
-import { contributionsData } from '@/lib/data'
+import { accoladesData, contributionsData } from '@/lib/data'
 import { useSectionInView } from '@/lib/hooks';
 import Contribution from './contribution';
 
@@ -17,10 +17,29 @@ export default function Contributions() {
             <SectionHeading>Contributions</SectionHeading>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-4">
                 {
-                    contributionsData.map((project, index) => (
+                    contributionsData.map((contribution, index) => (
                         <React.Fragment key={index}>
-                            <Contribution {...project} />
+                            <Contribution {...contribution} />
                         </React.Fragment>
+                    ))
+                }
+            </div>
+            <div className='flex w-full justify-around mt-28'>
+                {
+                    accoladesData.map((accoladeGroup, i) => (
+                        <div key={i}>
+                            <h3 className='text-2xl mb-3'>{accoladeGroup.title}</h3>
+                            <div>
+                                {
+                                    accoladeGroup.accolades.map((accolade, j) => (
+                                        <div key={j}>
+                                            <p className='inline opacity-60'>{accolade.prefix} - </p>
+                                            <a href={accolade.url} target='_blank' className='font-bold hover:text-blue-400'>{accolade.title}</a>
+                                        </div>
+                                    ))
+                                }
+                            </div>
+                        </div>
                     ))
                 }
             </div>
