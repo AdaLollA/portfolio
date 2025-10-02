@@ -38,7 +38,7 @@ export default function Experience() {
                                     fontSize: "1.5rem"
                                 }}>
                                 <h3 className='semi-bold capitalize'>{item.title}</h3>
-                                <p className='font-normal !mt-0'>{item.location}</p>
+                                <p className='font-light !mt-0 text-gray-700 dark:text-white/70'>{item.location}</p>
                                 <p className='!mt-1 !font-normal text-gray-700 dark:text-white/70'>{item.description}</p>
                             </VerticalTimelineElement>
                         </React.Fragment>
