@@ -78,13 +78,13 @@ export default function Intro() {
 
                 <a
                     className="bg-white p-4 flex text-gray-700 items-center gap-2 rounded-full text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack hover:text-gray-950 dark:bg-white/10 dark:text-white/60 dark:hover:text-gray-200"
-                    href="https://github.com/AdaLollA" target="_blank">
+                    href="https://github.com/lorenz-graf" target="_blank">
                     <FaGithubSquare />
                 </a>
 
                 <a
                     className="bg-white p-4 flex text-gray-700 items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack hover:text-gray-950 dark:bg-white/10 dark:text-white/60 dark:hover:text-gray-200"
-                    href="https://www.linkedin.com/in/lorenz-graf-65201a138/" target="_blank">
+                    href="https://www.linkedin.com/in/lorenz-graf/" target="_blank">
                     <BsLinkedin />
                 </a>
             </motion.div>
