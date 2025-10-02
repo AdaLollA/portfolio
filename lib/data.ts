@@ -170,12 +170,12 @@ export const accoladesData = [
         url: "https://sitechecker.pro/case-studies/lightcyde-agency/"
       },
       {
-        prefix: "thesis",
+        prefix: "uni thesis",
         title: "AI on Microcontrollers",
         url: "/ba1.pdf"
       },
       {
-        prefix: "thesis",
+        prefix: "uni thesis",
         title: "Intelligent Sleep Systems",
         url: "/ba2.pdf"
       }
